@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <h1>Icon</h1>
-      <img src="@/assets/icons/user.svg" class="icon-user">
+    <svg class="icon-user"><use xlink:href="#user" /></svg>
   </div>
 </template>
 
 <script>
+import '../src/assets/icons/user.svg'
 
 export default {
   name: 'App'
@@ -23,10 +24,8 @@ export default {
 }
 
 .icon-user {
-  filter: invert(55%) sepia(31%) saturate(4362%) hue-rotate(158deg) brightness(90%) contrast(101%);
-
-  &:hover {
-    filter: invert(0%) sepia(0%) saturate(7489%) hue-rotate(297deg) brightness(96%) contrast(104%);
-  }
+  width: 50px;
+  height: 50px;
+  color: red;
 }
 </style>

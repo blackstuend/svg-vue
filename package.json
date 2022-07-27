@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "gen-icon-font": "fantasticon ./src/assets/icons -o icon-dist --normalize true"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "fantasticon": "^1.2.3",
     "vue": "^2.6.14"
   },
   "devDependencies": {

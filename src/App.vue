@@ -1,14 +1,18 @@
 <template>
   <div id="app">
     <h1>Icon</h1>
-      <img src="@/assets/icons/user.svg" class="icon-user">
+  <Icon icon="mdi-light:home" class="icon-home" />
   </div>
 </template>
 
 <script>
+import { Icon } from '@iconify/vue2'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Icon
+  }
 }
 </script>
 
@@ -22,11 +26,9 @@ export default {
   margin-top: 60px;
 }
 
-.icon-user {
-  filter: invert(55%) sepia(31%) saturate(4362%) hue-rotate(158deg) brightness(90%) contrast(101%);
-
-  &:hover {
-    filter: invert(0%) sepia(0%) saturate(7489%) hue-rotate(297deg) brightness(96%) contrast(104%);
-  }
+.icon-home {
+  color: red;
+  width: 20px;
+  height: 20px;
 }
 </style>
